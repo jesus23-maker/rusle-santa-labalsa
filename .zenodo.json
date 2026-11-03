@@ -1,0 +1,9 @@
+{
+  "title": "RUSLE-Santa-LaBalsa: code and data for 'Formulation uncertainty, paraglacial terrain and mining legacies in water erosion of a deglaciating high-Andean basin'",
+  "upload_type": "software",
+  "description": "Google Earth Engine notebook, permutation tests (basin, block displacement and elevation-slope stratified), DEM preprocessing, figure scripts, exported layers and compiled public monitoring data (ANA 2013, 2016; Cañón del Pato EIA 1997; Morera 2010) for the Santa River basin upstream of La Balsa, Peru.",
+  "creators": [{"name": "Jesús Aranda, Diego Roy", "affiliation": "Universidad Nacional Agraria La Molina"}],
+  "keywords": ["soil erosion", "RUSLE", "Google Earth Engine", "glacier retreat", "mining legacies", "Santa River", "Peru"],
+  "license": "MIT",
+  "access_right": "open"
+}

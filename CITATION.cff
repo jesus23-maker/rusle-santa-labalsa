@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this code or data, please cite it as below."
+title: "Soil erosion in the Santa River basin upstream of La Balsa (Peru): USLE/RUSLE in Google Earth Engine"
+authors:
+  - family-names: "Jesús Aranda"
+    given-names: "Diego Roy"
+    affiliation: "Universidad Nacional Agraria La Molina"
+    email: "djesusar@unasam.edu.pe"
+version: "1.0.0"
+date-released: "2026-10-31"
+license: MIT
