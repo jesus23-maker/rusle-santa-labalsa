@@ -1,0 +1,26 @@
+{
+ "cls": {
+  "obs": 3.1574,
+  "null": 2.8729,
+  "lo": 2.8081,
+  "hi": 2.9397,
+  "p": 0.0002
+ },
+ "hot": {
+  "obs": 0.1112,
+  "null": 0.1176,
+  "lo": 0.1048,
+  "hi": 0.1306,
+  "p": 0.8394
+ },
+ "pasivos_slope_mean": 18.08,
+ "basin_slope_mean": 19.19,
+ "pasivos_elev_mean": 4025.0,
+ "basin_elev_mean": 3916.0,
+ "pasivos_by_elevband": {
+  "1": 141,
+  "2": 183,
+  "0": 33,
+  "3": 41
+ }
+}
