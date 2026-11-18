@@ -1,0 +1,6 @@
+data/dem/
+results/grid.npz
+results/dem_grid.npz
+results/ic_grid.npz
+data/external/chirps_monthly_1995_2024.npz
+__pycache__/

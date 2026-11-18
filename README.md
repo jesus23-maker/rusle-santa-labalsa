@@ -10,10 +10,18 @@ Code and derived data for the manuscript *"Formulation uncertainty, paraglacial 
 | `data/layers/*.png` | Georeferenced RGBA layers exported from Earth Engine (EPSG:4326; bounds in `meta.json`): erosion classes (USLE, RUSLE, RUSLE-MB, RUSLE 2017), hotspots (P90), glaciers 1987–1991 and 2023–2024, deglaciated terrain, R, K, LS, C and drainage network. |
 | `data/layers/meta.json` | Layer bounds, P90 threshold, basin polygon, outlet and the 399 mining legacies with RUSLE metrics in a 500 m buffer. |
 | `scripts/01_decode_layers.py` | Converts the class and hotspot layers into arrays. |
-| `scripts/02_permutation_test.py` | Permutation tests (basin-wide and 2–10 km block displacement of former mining units; 5,000 replicates). |
-| `scripts/dem_grid.py` | Resamples the Copernicus GLO-90 DEM to the analysis grid (elevation and slope). |
-| `scripts/perm_strat.py` | Permutation test stratified by elevation belt and slope class (5,000 replicates); results in `results/perm_strat_results.json`. |
-| `data/external/` | Public monitoring data compiled from ANA (2013, 2016), the Cañón del Pato EIA (1997) and Morera (2010); see `FUENTES.md`. |
+| `scripts/02_permutation_test.py` | Permutation tests (basin-wide and 2–10 km block displacement of former mining units; 5,000 replicates each). |
+| `scripts/03b_permutation_stratified.py` | Third permutation test, each site against a random pixel of its own elevation–slope stratum (5,000 replicates). Needs `results/dem_grid.npz`. |
+| `scripts/04_dem_grid.py` | Downloads Copernicus GLO-90 tiles and computes elevation and slope on the layer grid. |
+| `scripts/05_chirps_monthly.py` | Reads monthly CHIRPS (1995–2024) over the basin from the public cloud-optimised GeoTIFFs. |
+| `scripts/06_annual_rusle.py` | Annual RUSLE soil loss by hydrological year (September–August) from year-specific R₄. |
+| `scripts/07_validation_santa.py` | Validation against measured annual loads at Santa station (Morera, 2010): r, ρ, PBIAS, NSE, erosivity exponent. |
+| `scripts/08_connectivity_index.py`, `09_sdr_connectivity_eval.py` | Index of connectivity (Borselli et al., 2008; Cavalli et al., 2013) and connectivity-based delivery ratio (Vigiak et al., 2012; InVEST defaults). |
+| `scripts/10_loocv_montecarlo.py` | Leave-one-out cross-validation and Monte Carlo uncertainty analysis. |
+| `scripts/11_labalsa_outlet_load.py` | Outlet load at La Balsa for 1975–1980 from operator concentrations and discharges. |
+| `scripts/12_figure5.py` | Figure 5 (validation). |
+| `notebook/earth_engine_annual_rusle.py` | Earth Engine version of the annual calculation, pixel by pixel at 30 m. |
+| `data/external/*.csv` | Public data compiled for the study (see `FUENTES.md`). |
 | `scripts/03_figures.py` | Reproduces Figures 1–4 of the manuscript. |
 | `results/perm_results.json` | Output of the permutation tests. |
 
@@ -23,13 +31,24 @@ Code and derived data for the manuscript *"Formulation uncertainty, paraglacial 
 2. For the statistical test and figures (no Earth Engine needed):
 
 ```bash
-pip install numpy pillow matplotlib
+pip install numpy pillow matplotlib scipy rasterio pyproj pysheds
 python scripts/01_decode_layers.py
 python scripts/02_permutation_test.py
 python scripts/03_figures.py
-python scripts/dem_grid.py      # downloads Copernicus GLO-90 tiles first (see script)
-python scripts/perm_strat.py
+python scripts/04_dem_grid.py
+python scripts/03b_permutation_stratified.py
+# validation (needs rasterio, scipy, pyproj, pysheds)
+python scripts/05_chirps_monthly.py
+python scripts/06_annual_rusle.py
+python scripts/07_validation_santa.py
+python scripts/08_connectivity_index.py
+python scripts/09_sdr_connectivity_eval.py
+python scripts/10_loocv_montecarlo.py
+python scripts/11_labalsa_outlet_load.py
+python scripts/12_figure5.py
 ```
+
+All scripts are run from the repository root.
 
 Random seed: 20261030. Results may differ in the third decimal if the seed is changed.
 
