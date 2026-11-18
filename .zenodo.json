@@ -1,9 +1,24 @@
 {
   "title": "RUSLE-Santa-LaBalsa: code and data for 'Formulation uncertainty, paraglacial terrain and mining legacies in water erosion of a deglaciating high-Andean basin'",
   "upload_type": "software",
-  "description": "Google Earth Engine notebook, permutation tests (basin, block displacement and elevation-slope stratified), DEM preprocessing, figure scripts, exported layers and compiled public monitoring data (ANA 2013, 2016; Cañón del Pato EIA 1997; Morera 2010) for the Santa River basin upstream of La Balsa, Peru.",
-  "creators": [{"name": "Jesús Aranda, Diego Roy", "affiliation": "Universidad Nacional Agraria La Molina"}],
-  "keywords": ["soil erosion", "RUSLE", "Google Earth Engine", "glacier retreat", "mining legacies", "Santa River", "Peru"],
+  "description": "Google Earth Engine notebook and scripts, permutation tests (basin, block displacement and elevation-slope stratified), independent validation of annual RUSLE (computed at 30 m in Earth Engine) against measured suspended-sediment loads at Santa station 2002-2009 (Morera, 2010), connectivity-based sediment delivery ratio, Monte Carlo uncertainty analysis, outlet load reconstruction at La Balsa 1975-1980 (Egenor, 1999; Cañón del Pato EIA, 1997), exported layers and compiled public monitoring data (ANA 2013, 2016) for the Santa River basin upstream of La Balsa, Peru. Version 1.1 accompanies the revised manuscript.",
+  "creators": [
+    {
+      "name": "Jesús Aranda, Diego Roy",
+      "affiliation": "Universidad Nacional Agraria La Molina"
+    }
+  ],
+  "keywords": [
+    "soil erosion",
+    "RUSLE",
+    "Google Earth Engine",
+    "glacier retreat",
+    "mining legacies",
+    "Santa River",
+    "Peru",
+    "sediment delivery ratio",
+    "model validation"
+  ],
   "license": "MIT",
   "access_right": "open"
 }
