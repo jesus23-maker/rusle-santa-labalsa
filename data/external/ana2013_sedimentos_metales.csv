@@ -1,0 +1,24 @@
+fuente,punto,ubicacion,matriz,parametro,valor,unidad,referencia_guia,valor_guia,observacion
+ANA 2013 (IT 015-2013-ANA-DGCRH-VIG/MGSP),RSant1,Rio Santa antes de pasivos Ticapampa,sedimento,As,71.2,mg/kg,CCME PEL,17,minimo del cauce principal
+ANA 2013 (IT 015-2013-ANA-DGCRH-VIG/MGSP),RSant2,Rio Santa despues de pasivos Ticapampa,sedimento,As,436.9,mg/kg,CCME PEL,17,maximo de la cuenca
+ANA 2013 (IT 015-2013-ANA-DGCRH-VIG/MGSP),RSant2,Rio Santa despues de pasivos Ticapampa,sedimento,Pb,96.79,mg/kg,CCME PEL,91.3,
+ANA 2013 (IT 015-2013-ANA-DGCRH-VIG/MGSP),RSant2,Rio Santa despues de pasivos Ticapampa,sedimento,Zn,379.5,mg/kg,CCME PEL,315,
+ANA 2013 (IT 015-2013-ANA-DGCRH-VIG/MGSP),RSant2,Rio Santa despues de pasivos Ticapampa,sedimento,Cd,5.59,mg/kg,CCME PEL,3.5,
+ANA 2013 (IT 015-2013-ANA-DGCRH-VIG/MGSP),RSant13,Rio Santa antes de desembocar,sedimento,Cd,8.72,mg/kg,CCME PEL,3.5,
+ANA 2013 (IT 015-2013-ANA-DGCRH-VIG/MGSP),RNegr,Rio Negro,sedimento,Cd,8.97,mg/kg,CCME PEL,3.5,maximo de la cuenca
+ANA 2013 (IT 015-2013-ANA-DGCRH-VIG/MGSP),RSant1,Rio Santa antes de pasivos Ticapampa,sedimento,Al,5220.6,mg/kg,,,minimo cauce principal
+ANA 2013 (IT 015-2013-ANA-DGCRH-VIG/MGSP),RSant2,Rio Santa despues de pasivos Ticapampa,sedimento,Al,7508.08,mg/kg,,,
+ANA 2013 (IT 015-2013-ANA-DGCRH-VIG/MGSP),RSant13,Rio Santa antes de desembocar,sedimento,Al,11869.6,mg/kg,,,maximo cauce principal
+ANA 2013 (IT 015-2013-ANA-DGCRH-VIG/MGSP),RSant1,Rio Santa antes de pasivos Ticapampa,agua,Al,0.23,mg/L,ECA 1-A2,0.2,
+ANA 2013 (IT 015-2013-ANA-DGCRH-VIG/MGSP),RSant2,Rio Santa despues de pasivos Ticapampa,agua,Al,0.67,mg/L,ECA 1-A2,0.2,
+ANA 2013 (IT 015-2013-ANA-DGCRH-VIG/MGSP),RSant2,Rio Santa despues de pasivos Ticapampa,agua,As,0.0206,mg/L,ECA 1-A2,0.01,
+ANA 2013 (IT 015-2013-ANA-DGCRH-VIG/MGSP),RSant2,Rio Santa despues de pasivos Ticapampa,agua,Fe,1.356,mg/L,ECA 1-A2,1,
+ANA 2013 (IT 015-2013-ANA-DGCRH-VIG/MGSP),RSant5,Rio Santa en Huaraz,agua,Al,1.53,mg/L,ECA 1-A2,0.2,
+ANA 2013 (IT 015-2013-ANA-DGCRH-VIG/MGSP),RSant5,Rio Santa en Huaraz,agua,As,0.024,mg/L,ECA 1-A2,0.01,
+ANA 2013 (IT 015-2013-ANA-DGCRH-VIG/MGSP),RSant5,Rio Santa en Huaraz,agua,Fe,3.319,mg/L,ECA 1-A2,1,
+ANA 2013 (IT 015-2013-ANA-DGCRH-VIG/MGSP),RNegr,Rio Negro,agua,Al,1.69,mg/L,ECA 1-A2,0.2,
+ANA 2013 (IT 015-2013-ANA-DGCRH-VIG/MGSP),RNegr,Rio Negro,agua,Fe,4.3742,mg/L,ECA 1-A2,1,
+ANA 2013 (IT 015-2013-ANA-DGCRH-VIG/MGSP),RSant8,Rio Santa sector Balbas,agua,As,0.033,mg/L,ECA 1-A2,0.01,
+ANA 2013 (IT 015-2013-ANA-DGCRH-VIG/MGSP),RSant12,Rio Santa puente Santa,agua,Al,2.68,mg/L,ECA 1-A2,0.2,
+ANA 2013 (IT 015-2013-ANA-DGCRH-VIG/MGSP),RSant12,Rio Santa puente Santa,agua,Fe,5.193,mg/L,ECA 1-A2,1,
+ANA 2013 (IT 015-2013-ANA-DGCRH-VIG/MGSP),RSant12,Rio Santa puente Santa,agua,As,0.0333,mg/L,ECA 1-A2,0.01,
